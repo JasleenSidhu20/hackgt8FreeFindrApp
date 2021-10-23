@@ -2,9 +2,140 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>find a freebee</title>
 </head>
 <body>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">show all</button>
+        <button class="btn" onclick="filterSelection('food')">food</button>
+        <button class="btn" onclick="filterSelection('merch')">merch</button>
+        <button class="btn" onclick="filterSelection('events')">events</button>
 
+    </div>
+
+    <!--<div class="container">
+        <div class="filterDiv food">donuts</div>
+        <div class="filterDiv food">cookies</div>
+        <div class="filterDiv merch">HackGT stickers</div>
+        <div class="filterDiv merch">FASET t-shirts</div>
+        <div class="filterDiv events">Movie Night</div>
+        <div class="filterDiv events">Positivity Pumpkins</div>
+    </div> -->
+
+    <section class="projects-section bg-light" id="projects">
+        <!-- donut item (food) -->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="https://3toh891af6rf1cn1po1ecevj-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/iStock-180820338-1024x683.jpg" 
+                    alt="doughnuts" style="width:700px;height:500px;"/></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>donuts</h4>
+                        <p class="text-black-50 mb-0">RHA is giving away one donut per person at Tech Green
+                            from 1-3pm today (6/3)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button type="button">skip</button>
+            <button type="button">save</button>
+            <hr class="d-none d-lg-block mb-0 ms-0" />
+            <!-- FASET t-shirts (merch) -->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="https://ce.gatech.edu/hg/image/637721/740xX_scale" 
+                    alt="FASET t-shirts" style="width:700px;height:500px"/></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">FASET t-shirts</h4>
+                                <p class="mb-0 text-white-50">t-shirts from FASET 2020 in the entrance of the Flag Building,
+                                    sizes M-XL, while supplies last
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button">skip</button>
+            <button type="button">save</button>
+            <hr class="d-none d-lg-block mb-0 ms-0" />
+            <!-- HackGT stickers (merch) -->
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">HackGT stickers</h4>
+                                <p class="mb-0 text-white-50">HEX Labs is handing out stickers at the Klaus atrium, for CS majors,
+                                    while supplies last or until EOD 5/30
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button">skip</button>
+            <button type="button">save</button>
+            <hr class="d-none d-lg-block mb-0 ms-0" />
+            <!-- cookies item (food) -->
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="https://www.visitbn.org/wp-content/uploads/2017/01/Screen-Shot-2017-01-20-at-11.40.18-AM.png" 
+                        alt="cookies" style="width:600px;height:300px;"/></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>cookies</h4>
+                            <p class="text-black-50 mb-0">Tech Dining is giving out free cookies from Insomnia, outside NAV Dining Hall,
+                                from 12-2pm today (6/3)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button">skip</button>
+            <button type="button">save</button>
+            <hr class="d-none d-lg-block mb-0 ms-0" />
+            <!-- Movie Night (events) -->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="https://studentcenter.gatech.edu/sites/default/files/uploads/images/superblock_images/movies-01_530x150.jpg" 
+                    alt="Movie Night" style="width:700px;height:500px"/></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Movie Night with SCPC</h4>
+                                    <p class="mb-0 text-white-50">Get your tickets for movie night with SCPC in Bobby Dodd Stadium,
+                                        <a href="https://studentcenter.gatech.edu/scpc">check out the event page</a>,
+                                        event at 6/8 at 8pm
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button">skip</button>
+            <button type="button">save</button>
+            <hr class="d-none d-lg-block mb-0 ms-0" />
+            <!-- Resume Workshop -->
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Resume Workshops</h4>
+                                <p class="mb-0 text-white-50">Scheller College of Business is hosting a resume workshop, gain valuble insights,
+                                    anyone is welcome, today (6/3) at 7pm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button">skip</button>
+        <button type="button">save</button>
+        <hr class="d-none d-lg-block mb-0 ms-0" />
 </body>
 </html>
