@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">find a freebee</h1>
+                </div>
+            </div>
+        </div>
+    </header>
     <meta charset="UTF-8">
     <title>find a freebee</title>
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">show all</button>
-        <button class="btn" onclick="filterSelection('food')">food</button>
-        <button class="btn" onclick="filterSelection('merch')">merch</button>
-        <button class="btn" onclick="filterSelection('events')">events</button>
-
-    </div>
-
-    <!--<div class="container">
-        <div class="filterDiv food">donuts</div>
-        <div class="filterDiv food">cookies</div>
-        <div class="filterDiv merch">HackGT stickers</div>
-        <div class="filterDiv merch">FASET t-shirts</div>
-        <div class="filterDiv events">Movie Night</div>
-        <div class="filterDiv events">Positivity Pumpkins</div>
-    </div> -->
+    <script src="scripts.js"></script>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light fixed-bottom" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <!-- <a class="navbar-brand" href="#page-top">Start Bootstrap</a> -->
+            <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarResponsive"> -->
+                <!-- <ul class="navbar-nav ms-auto"> -->
+                    <h2 class="nav-item"><a class="nav-link" href="FindAFreebase.html">🔍</a></h2>
+                    <h2 class="nav-item"><a class="nav-link" href="AddAFreebie.html">✏️</a></h2>
+                    <h2 class="nav-item"><a class="nav-link" href="Saved.html">💛</a></h2>
+                <!-- </ul> -->
+            <!-- </div> -->
+        </div>
+    </nav>
 
     <section class="projects-section bg-light" id="projects">
         <!-- donut item (food) -->
@@ -38,8 +49,8 @@
                     </div>
                 </div>
             </div>
-            <button type="button">skip</button>
-            <button type="button">save</button>
+            <button type="btn">skip</button>
+            <button type="btn">save</button>
             <hr class="d-none d-lg-block mb-0 ms-0" />
             <!-- FASET t-shirts (merch) -->
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
