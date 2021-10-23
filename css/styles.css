@@ -221,7 +221,9 @@ mark, .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
 }
-<li style="color:Red" >
+li {
+   color: Red";
+}
 
 sub,
 sup {
