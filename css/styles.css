@@ -221,6 +221,7 @@ mark, .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
 }
+<li style="color:Red" >
 
 sub,
 sup {
@@ -685,6 +686,20 @@ progress {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+  color: rgba(242, 201, 76, 1);
+}
+.row2 > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+  color: white;
 }
 
 .col {
@@ -3036,6 +3051,12 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #818181;
   border-color: #818181;
+}
+.btn-primary2 {
+  color: white;
+  background-color: grey;
+  border-color: red;
+  font-size: 5px;
 }
 .btn-primary:hover {
   color: #fff;
@@ -8015,7 +8036,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #000000;
 }
 
 .bg-dark {
